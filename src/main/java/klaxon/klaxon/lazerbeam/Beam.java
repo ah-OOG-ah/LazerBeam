@@ -30,39 +30,39 @@ public class Beam {
     public boolean addSegment(BeamSegment segment) {
 
         // No collision checking... yet
-        pieces.add(segment);
+        //pieces.add(segment);
         return true;
     }
 
     /**
      * Calculates the area
-     */
+     /
     public double calcArea() {
 
         return pieces.stream().mapToDouble(BeamSegment::area).sum();
-    }
+    }*/
 
     /**
      * Calculates the centroid
-     */
+     *
     public double calcCentroidY() {
 
         double area = calcArea();
         return pieces.stream().mapToDouble(s -> s.area() * s.centroidY() / area).sum();
-    }
+    }*/
 
     /**
      * Calculates the second moment of area, relative to the centroid
-     */
+     *
     public double calc2MoA() {
 
-        return pieces.stream().mapToDouble(s -> s.x2MoA() + s.area() * Math.pow())
-    }
+        return pieces.stream().mapToDouble(s -> s.x2MoA() + s.area() * Math.pow());
+    }*/
 
     /**
      * Return the beam's total cost in USD
-     */
+     *
     public double totalCost() {
         return pieces.stream().mapToDouble(BeamSegment::cost).sum();
-    }
+    }*/
 }

@@ -96,7 +96,7 @@ public class Main {
         }
         System.out.println();
 
-        double hw = 40.5;
+        double hw = 41.0;
         double bt = 7;
         double bb = 20;
         double maxvmax = calcAsIVmax(ACRYLIC, bt, bb, hw, WORST);

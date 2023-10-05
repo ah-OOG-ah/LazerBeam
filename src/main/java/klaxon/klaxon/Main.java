@@ -17,6 +17,14 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
+        // GPLv3
+        System.out.println(
+                "LazerBeam  Copyright (C) 2023  ah-OOG-ah\n" +
+                "This program comes with ABSOLUTELY NO WARRANTY.\n" +
+                "This is free software, and you are welcome to redistribute it\n" +
+                "under certain conditions.\n" +
+                "For details see LICENSE.");
+
         for (Materials mat : Materials.values()) {
             double minCost = 1_000_000;
             double minb = -1;
